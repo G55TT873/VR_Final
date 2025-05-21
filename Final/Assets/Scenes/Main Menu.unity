@@ -315,15 +315,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 152e8e659ea370c4180197b4a7e511c6, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -399,8 +399,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Marker
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 34d72ef01206a9a40b7bb9f0da531ae1, type: 2}
-  m_sharedMaterial: {fileID: 1983908071528763808, guid: 34d72ef01206a9a40b7bb9f0da531ae1,
+  m_fontAsset: {fileID: 11400000, guid: 7e46b7d0df6c28e46a8e924efa251e4a, type: 2}
+  m_sharedMaterial: {fileID: 3110839634188038345, guid: 7e46b7d0df6c28e46a8e924efa251e4a,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -536,8 +536,8 @@ MonoBehaviour:
 
     Showroom'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 34d72ef01206a9a40b7bb9f0da531ae1, type: 2}
-  m_sharedMaterial: {fileID: 1983908071528763808, guid: 34d72ef01206a9a40b7bb9f0da531ae1,
+  m_fontAsset: {fileID: 11400000, guid: 7e46b7d0df6c28e46a8e924efa251e4a, type: 2}
+  m_sharedMaterial: {fileID: 3110839634188038345, guid: 7e46b7d0df6c28e46a8e924efa251e4a,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -672,7 +672,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.6495838, g: 0.6830188, b: 0.08118899, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -727,7 +727,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 240ae01ad665c6d4798249cbec763ce8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a689281f545979940b5cedad12ec31a8, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1116,7 +1116,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.62352943, g: 0.654902, b: 0.078431375, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1171,7 +1171,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 240ae01ad665c6d4798249cbec763ce8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a689281f545979940b5cedad12ec31a8, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1305,8 +1305,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Markerless
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 34d72ef01206a9a40b7bb9f0da531ae1, type: 2}
-  m_sharedMaterial: {fileID: 1983908071528763808, guid: 34d72ef01206a9a40b7bb9f0da531ae1,
+  m_fontAsset: {fileID: 11400000, guid: 7e46b7d0df6c28e46a8e924efa251e4a, type: 2}
+  m_sharedMaterial: {fileID: 3110839634188038345, guid: 7e46b7d0df6c28e46a8e924efa251e4a,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}

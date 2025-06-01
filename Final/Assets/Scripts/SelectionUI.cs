@@ -1,12 +1,13 @@
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.AR;
+using UnityEngine.EventSystems;
 
 public class SelectionUI : MonoBehaviour
 {
-    public GameObject uiCanvas; // Assign your UI Canvas in the Inspector
-
+    public GameObject uiCanvas;
     private ARSelectionInteractable selectionInteractable;
+    private bool isSelected = false;
 
     void Awake()
     {
@@ -19,8 +20,30 @@ public class SelectionUI : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (isSelected && Input.GetMouseButtonDown(0))
+        {
+            if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
+                return;
+
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit))
+            {
+                if (hit.transform == this.transform)
+                {
+                    return;
+                }
+            }
+
+            DeselectUI();
+        }
+    }
+
     private void OnSelectEntered(SelectEnterEventArgs args)
     {
+        isSelected = true;
         if (uiCanvas != null)
         {
             uiCanvas.SetActive(true);
@@ -29,9 +52,19 @@ public class SelectionUI : MonoBehaviour
 
     private void OnSelectExited(SelectExitEventArgs args)
     {
+    }
+
+    private void DeselectUI()
+    {
+        isSelected = false;
         if (uiCanvas != null)
         {
             uiCanvas.SetActive(false);
+        }
+
+        if (selectionInteractable != null && selectionInteractable.isSelected)
+        {
+            selectionInteractable.interactionManager.SelectExit((IXRSelectInteractor)selectionInteractable, (IXRSelectInteractable)selectionInteractable.firstInteractorSelecting);
         }
     }
 

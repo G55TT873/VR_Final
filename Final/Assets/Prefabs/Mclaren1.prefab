@@ -11458,6 +11458,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1349083510816789476, guid: b37e58c0ad63d4242ace274ae5484149,
+        type: 3}
+      propertyPath: m_ExcludeUITouches
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1769512738660089926, guid: b37e58c0ad63d4242ace274ae5484149,
         type: 3}
       propertyPath: m_AnchorMax.y

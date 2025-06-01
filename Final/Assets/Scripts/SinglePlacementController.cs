@@ -29,7 +29,6 @@ public class SinglePlacementController : MonoBehaviour
 
         hasPlaced = true;
 
-        // Disable further placements
         placementInteractable.enabled = false;
 
         Debug.Log("AR object placed. Disabling further placements.");

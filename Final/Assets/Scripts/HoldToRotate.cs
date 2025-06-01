@@ -3,7 +3,7 @@ using UnityEngine.EventSystems;
 
 public class HoldToRotate : MonoBehaviour
 {
-    public Transform targetToRotate; // Assign the object to rotate in the Inspector
+    public Transform targetToRotate;
     public float rotationSpeed = 100f;
     private bool isRotating = false;
 
@@ -15,13 +15,12 @@ public class HoldToRotate : MonoBehaviour
         }
     }
 
-    // Call this from Event Trigger → Pointer Down
+
     public void StartRotating()
     {
         isRotating = true;
     }
 
-    // Call this from Event Trigger → Pointer Up
     public void StopRotating()
     {
         isRotating = false;

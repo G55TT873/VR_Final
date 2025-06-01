@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class PanelSwitcher : MonoBehaviour
 {
-    public GameObject panelA;  // The current panel
-    public GameObject panelB;  // The next panel to show
+    public GameObject panelA;
+    public GameObject panelB;
 
     public void SwitchPanels()
     {

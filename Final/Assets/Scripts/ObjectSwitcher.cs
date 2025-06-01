@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ObjectSwitcher : MonoBehaviour
 {
-    public GameObject[] objects; // Drag your 3 objects here
+    public GameObject[] objects;
 
    
 
@@ -21,13 +21,11 @@ public class ObjectSwitcher : MonoBehaviour
         SwitchTo(0);
     }
 
-    // Call this from Button 2
     public void ShowObject2()
     {
         SwitchTo(1);
     }
 
-    // Call this from Button 3
     public void ShowObject3()
     {
         SwitchTo(2);

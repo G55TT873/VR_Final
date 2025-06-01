@@ -24,7 +24,6 @@ public class ImageTracker : MonoBehaviour
  // Event Handler
  private void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs)
  {
- //Create object based on image tracked
  foreach (var trackedImage in eventArgs.added)
  {
  foreach (var arPrefab in ArPrefabs)
@@ -37,7 +36,6 @@ public class ImageTracker : MonoBehaviour
  }
  }
 
- //Update tracking position
  foreach (var trackedImage in eventArgs.updated)
  {
  foreach (var gameObject in ARObjects)

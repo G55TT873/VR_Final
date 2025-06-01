@@ -6,16 +6,14 @@ public class MaterialColorController : MonoBehaviour
     public Slider redSlider;
     public Slider greenSlider;
     public Slider blueSlider;
-    public Material targetMaterial; // Drag the shared material asset here
+    public Material targetMaterial;
 
     void Start()
     {
-        // Add listeners to the sliders
         redSlider.onValueChanged.AddListener(UpdateColor);
         greenSlider.onValueChanged.AddListener(UpdateColor);
         blueSlider.onValueChanged.AddListener(UpdateColor);
 
-        // Apply initial color
         UpdateColor(0);
     }
 

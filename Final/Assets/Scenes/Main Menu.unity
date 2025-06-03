@@ -695,9 +695,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1737386437}
-        m_TargetAssemblyTypeName: Markerless_Scene, Assembly-CSharp
-        m_MethodName: SceneSwitch
+      - m_Target: {fileID: 1737386439}
+        m_TargetAssemblyTypeName: SceneSwitchers, Assembly-CSharp
+        m_MethodName: MarkerlessSwitch
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1139,9 +1139,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1737386436}
-        m_TargetAssemblyTypeName: MarkerScene, Assembly-CSharp
-        m_MethodName: SceneSwitch
+      - m_Target: {fileID: 1737386439}
+        m_TargetAssemblyTypeName: SceneSwitchers, Assembly-CSharp
+        m_MethodName: MarkerSwitch
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1198,8 +1198,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1737386438}
-  - component: {fileID: 1737386437}
-  - component: {fileID: 1737386436}
+  - component: {fileID: 1737386439}
   m_Layer: 0
   m_Name: SceneLoader
   m_TagString: Untagged
@@ -1207,30 +1206,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1737386436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1737386435}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: debb8547603d8574a9759a9c60da7db8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1737386437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1737386435}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e70e84dab92c8424d9874a624e29eb5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1737386438
 Transform:
   m_ObjectHideFlags: 0
@@ -1246,6 +1221,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1737386439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737386435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e6ef8a96bb98f9418f9858a94393362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1881440407
 GameObject:
   m_ObjectHideFlags: 0
